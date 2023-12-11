@@ -64,7 +64,7 @@ function AddEventForm() {
         description,
         location,
         dateTime,
-        organizerId: user.organizer ? user.organizer.id : 0,
+        /* organizerId: user.organizer ? user.organizer.id : 0, */
         photographers: [{ photographerId: photographersSelect }],
         invitations: [],
       });
@@ -201,7 +201,7 @@ function AddEventForm() {
                                 value={photographer.id}
                                 key={photographer.id}
                               >
-                                {photographer.user.name}
+                                {/* {photographer.user.name} */}
                               </option>
                             ))}
                           </select>

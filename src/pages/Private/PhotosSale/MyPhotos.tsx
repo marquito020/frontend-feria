@@ -7,7 +7,7 @@ import { useAllClientPhotoSales } from "../../../hooks/usePhotoSale.hook";
 function MyPhotos() {
   const user = useSelector((state: RootState) => state.user);
   const { clientPhotoSales, isLoading, error } = useAllClientPhotoSales(
-    user.client ? user.client.id : 0
+    3,
   );
 
   if (isLoading) return <div>Loading photos...</div>;

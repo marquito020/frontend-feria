@@ -8,7 +8,7 @@ import { RootState } from "../../../../redux/store";
 function PhotosList() {
   const user = useSelector((state: RootState) => state.user);
   const { photos, isLoading, error } = useAllPhotosPhotographer(
-    user.photographer ? user.photographer.id : 0
+    3,
   );
   const { deletePhoto } = useDeletePhoto();
 
