@@ -72,7 +72,7 @@ function ShowPhotographer({ photographerId }: Props) {
                       />
                       <div className="flex flex-col justify-between p-4 leading-normal">
                         <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                          {photographerFound?.user.name}
+                          {/* {photographerFound?.user.name} */}
                         </h5>
                         <p className=" font-normal text-gray-700 dark:text-gray-400">
                           Especialidad:{" "}

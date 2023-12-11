@@ -17,7 +17,7 @@ function AddPhotoForm() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const { addPhoto } = useAddPhoto();
   const { photographerEvent } = useGetEvents(
-    user.photographer ? user.photographer.id : 0
+    user._id ? parseInt(`${user._id}`) : 0
   );
   const { mutate } = useSWRConfig();
   const [messageError, setMessageError] = useState("");
@@ -47,10 +47,10 @@ function AddPhotoForm() {
     formData.append("price", price);
     formData.append("eventId", eventId);
     formData.append("isPublic", isPublic);
-    formData.append(
+    /* formData.append(
       "photographerId",
       user.photographer ? `${user.photographer.id}` : "0"
-    );
+    ); */
     formData.append("image", image2 ? image2[0] : "");
 
     console.log(price, eventId, isPublic);
@@ -63,11 +63,11 @@ function AddPhotoForm() {
         setMessageError("");
         setIsOpen(false);
         toast.success("Foto subida exitosamente", { id: toastId });
-        await mutate(
+        /* await mutate(
           `${photosUrl}/photographer/${
             user.photographer ? user.photographer.id : 0
           }`
-        );
+        ); */
       } else if (response && "message" in response) {
         setMessageError(response.message as string);
         toast.error("Error al subir la foto", { id: toastId });

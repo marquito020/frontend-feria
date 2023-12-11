@@ -298,7 +298,7 @@ function CartList() {
               <div className="flex justify-center">
                 <input
                   type="number"
-                  className="border border-gray-200 rounded-md p-2 w-20"
+                  className="border border-gray-200 rounded-md p-2 w-full"
                   placeholder="0"
                   style={{ color: 'white' }}
                   onChange={(e) => {

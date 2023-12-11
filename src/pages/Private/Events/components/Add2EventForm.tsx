@@ -53,7 +53,7 @@ function Add2EventForm() {
       photographers.forEach((photographer) => {
         photographersOptionValue.push({
           value: `${photographer.id}`,
-          label: `${photographer.user.name}`,
+          label: `${photographer.user.nombre}`,
         });
       });
       setPhotographersOptions(photographersOptionValue);
@@ -65,7 +65,7 @@ function Add2EventForm() {
     if (users) {
       users.forEach((user) => {
         usersOptionValue.push({
-          value: `${user.id}`,
+          value: `${user._id}`,
           label: `${user.email}`,
         });
       });
@@ -108,7 +108,7 @@ function Add2EventForm() {
         location,
         dateTime,
         qr: "",
-        organizerId: user.organizer ? user.organizer.id : 0,
+        /* organizerId: user.organizer ? user.organizer.id : 0, */
         photographers: dataPhotographers,
         invitations: dataUsers,
       });

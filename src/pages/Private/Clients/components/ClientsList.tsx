@@ -50,13 +50,13 @@ function ClientsList() {
             <img
               draggable={false}
               src={client.user.imageSecureUrl}
-              alt={client.user.name}
+              /* alt={client.user.name} */
               className="h-full w-full rounded-md  object-cover object-center lg:h-20 lg:w-20"
             />
           </div>
           <div>
             <h5 className="md:hidden font-bold mb-2">Nombre</h5>
-            <p>{client.user.name}</p>
+            {/* <p>{client.user.name}</p> */}
           </div>
           <div>
             <h5 className="md:hidden font-bold mb-2">Correo electronico</h5>

@@ -85,7 +85,7 @@ function UpdatePhotographerForm() {
         <img
           className="h-64 rounded-md"
           src={photographerFound?.user.imageSecureUrl}
-          alt={photographerFound?.user.name}
+          /* alt={photographerFound?.user.name} */
         />
         <p className="mt-1 max-w-2xl text-sm leading-6 text-red-500">
           {messageError}
@@ -98,7 +98,7 @@ function UpdatePhotographerForm() {
               Nombre completo
             </dt>
             <input
-              defaultValue={photographerFound?.user.name}
+              /* defaultValue={photographerFound?.user.name} */
               id="name"
               name="name"
               type="text"
