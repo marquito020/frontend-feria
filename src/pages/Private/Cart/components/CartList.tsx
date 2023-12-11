@@ -351,7 +351,7 @@ function CartList() {
 
                     <h1 className="text-gray-900 text-base font-medium">Tiempo de Recuperación:</h1>
 
-                    <p className="text-gray-900 text-base font-medium">{tiempoRecuperacion} meses</p>
+                    <p className="text-gray-900 text-base font-medium">{tiempoRecuperacion} años</p>
 
                     {/* Cantidad de Paneles */}
                     <h1 className="text-gray-900 text-base font-medium">Cantidad de Paneles:</h1>
