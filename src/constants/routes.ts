@@ -23,4 +23,4 @@ export enum PrivateRoutes {
 }
 
 /* export const baseUrl = "http://3.144.249.112:3000/"; */
-export const baseUrl = "http://localhost:5000/";
+export const baseUrl = "https://backend-feria.onrender.com/";
